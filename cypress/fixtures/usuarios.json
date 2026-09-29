@@ -1,0 +1,20 @@
+
+{
+    "usuarios": [
+        {
+            "name": "Elisson Silva",
+            "email": "ellison.silva@example.com.br",
+            "password": "fsdfsd"
+        },
+        {
+            "name": "Maria Oliveira",
+            "email": "mariaoliveira@example.com.br",
+            "password": "password456"
+        },
+        {
+            "name": "João Santos",
+            "email": "joao.santos@example.com", 
+            "password": "Password78910154897897974654231654"
+        }
+    ]
+}

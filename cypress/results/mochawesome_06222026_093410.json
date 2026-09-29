@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-22T12:34:02.182Z",
+    "end": "2026-06-22T12:34:10.301Z",
+    "duration": 8119,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b522d06c-6683-4142-b208-2d2e9603f957",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "02a6fd17-2d65-4bb6-8340-78e670eac765",
+          "title": "Página de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve exibir mensagens de erro para credenciais inválidas",
+              "fullTitle": "Página de login Deve exibir mensagens de erro para credenciais inválidas",
+              "timedOut": null,
+              "duration": 1543,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "209a9f0f-4bb5-4ab1-b1e9-4594ce9f94b7",
+              "parentUUID": "02a6fd17-2d65-4bb6-8340-78e670eac765",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir mensagem de erro para email inválido",
+              "fullTitle": "Página de login Deve exibir mensagem de erro para email inválido",
+              "timedOut": null,
+              "duration": 1652,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('emailinvalido');\ncy.get('[data-test=\"input-loginPassword\"]').type('Senha123');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');",
+              "err": {},
+              "uuid": "25543e3e-3e7f-4c00-8ed3-0d14084135e0",
+              "parentUUID": "02a6fd17-2d65-4bb6-8340-78e670eac765",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir mensagem de erro para senha incorreta",
+              "fullTitle": "Página de login Deve exibir mensagem de erro para senha incorreta",
+              "timedOut": null,
+              "duration": 2500,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('ana@email.com');\ncy.get('[data-test=\"input-loginPassword\"]').type('SenhaIncorreta');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "1291f272-113f-465e-8556-9344610ee899",
+              "parentUUID": "02a6fd17-2d65-4bb6-8340-78e670eac765",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "209a9f0f-4bb5-4ab1-b1e9-4594ce9f94b7",
+            "25543e3e-3e7f-4c00-8ed3-0d14084135e0",
+            "1291f272-113f-465e-8556-9344610ee899"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5695,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
